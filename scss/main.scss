@@ -1,0 +1,137 @@
+$dark-overlay: rgba(0, 0, 0, 0.6);
+
+.navbar {
+  .active {
+    border-left: 3px solid #a19f9f;
+  }
+}
+
+#showcase {
+  .carousel-item {
+    height: 500px;
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+    }
+  }
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  .dark-overlay {
+    background-color: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/media.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  .dark-overlay {
+    background-color: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#main-footer {
+  background-color: black;
+}
+
+#about {
+  &-header {
+    position: relative;
+    min-height: 200px;
+    background: url("../img/image1.jpg");
+    background-position: 0 -350px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .about-img {
+    margin-top: -30px;
+    z-index: 1;
+  }
+}
+
+#quote-slider {
+  .carousel-item {
+    height: 150px;
+  }
+}
+
+#quote-slider {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    // outline: black;
+    // background-size: 100%, 100%;
+    // border-radius: 50%;
+    // border: 1px solid black;
+    background-image: none;
+    text-decoration: none;
+  }
+
+  .carousel-control-next-icon:after {
+    content: "->";
+    font-size: 20px;
+    color: white;
+  }
+
+  .carousel-control-prev-icon:after {
+    content: "<-";
+    font-size: 20px;
+    color: white;
+  }
+}
+
+#services {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/image1.jpg");
+  background-position: 0 -350px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#faq {
+  .accordion {
+    background: black;
+
+    button {
+      background: black;
+      border: none;
+    }
+  }
+}
+
+#blog-header {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/image1.jpg");
+  background-position: 0 -350px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
